@@ -14,7 +14,7 @@ struct HomeView: View {
     var body: some View {
         ZStack{
             //background layer
-            Color.theme.background
+            Color.theme.backgroundColor
                 .ignoresSafeArea()
             
             // content layer
@@ -60,7 +60,7 @@ extension HomeView{
             Text(showPortfolio ? "Portfolio":"Live Prices")
                 .font(.headline)
                 .fontWeight(.heavy)
-                .foregroundColor(Color.theme.accent)
+                .foregroundColor(Color.theme.accentColor)
                 .animation(.none)
             Spacer()
             CircleButtonView(iconeName: "chevron.right")
@@ -105,7 +105,7 @@ extension HomeView{
                 .frame(width:UIScreen.main.bounds.width / 3.5,alignment: .trailing)
         }
         .font(.caption)
-        //.foregroundColor(Color.theme.secondaryText)
+        .foregroundColor(Color.theme.secondaryTextColor)
         .padding(.horizontal)
     }
 }

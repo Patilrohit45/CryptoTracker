@@ -10,10 +10,8 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack{
-            Color.theme.background
+            Color.theme.backgroundColor
                 .ignoresSafeArea()
-            
-            
         }
     }
 }
