@@ -48,7 +48,7 @@ class LocalFileManager{
             do{
                 try FileManager.default.createDirectory(at: url, withIntermediateDirectories: true, attributes: nil)
             }catch let error{
-                print("Error creating directory.FolderName: \(folderName)")
+                print("Error creating directory.FolderName: \(folderName). \(error)")
             }
         }
     }
