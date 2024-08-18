@@ -17,7 +17,7 @@ class CoinDataService {
         getCoins()
     }
     
-    private func getCoins() {
+     func getCoins() {
         var components = URLComponents(string: "https://api.coingecko.com/api/v3/coins/markets")
         components?.queryItems = [
             URLQueryItem(name: "vs_currency", value: "usd"),

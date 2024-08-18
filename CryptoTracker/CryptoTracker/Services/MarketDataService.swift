@@ -17,7 +17,7 @@ class MarketDataService {
         getData()
     }
     
-    private func getData() {
+     func getData() {
         var components = URLComponents(string: "https://api.coingecko.com/api/v3/global")
 //        components?.queryItems = [
 //            URLQueryItem(name: "vs_currency", value: "usd"),
