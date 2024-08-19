@@ -84,19 +84,19 @@ extension SettingsView{
     }
 
     private var developerSection: some View{
-        Section(header: Text("Developer")) {
+        Section(header: Text("Swiftful Thininking")) {
             VStack(alignment:.leading){
                 Image("logo")
                     .resizable()
                     .frame(width:100,height: 100)
                     .clipShape(RoundedRectangle(cornerRadius: 20))
-                Text("This app was developed by Rohit Patil.It uses SwiftUI and is written 100% in Swift. The project benefits multi-threading, publishers/subscribers, and data persistance. This project was made by following @swiftuiThinking course on YOUTUBE.")
+                Text("This App was made by following a @SwiftuiThinking course on Youtube. It uses MVVM Architecture,Combine, and CoreData!")
+                    .font(.callout)
                     .fontWeight(.medium)
                     .foregroundColor(Color.theme.accentColor)
             }
             .padding()
-            Link("Connect me on Linkedin 💻 ",destination: linkedinURL)
-            Link("Follow me on Instagram 📱",destination: instagramURL)
+            Link("Subscribe on Youtube 🥳 ",destination: youtubeURL)
         }
 
     }
@@ -109,22 +109,5 @@ extension SettingsView{
             Link("Learn More",destination: defaultURL)
         }
     }
-    
-//    private var swiftuithinkingSection: some View{
-//        Section(header: Text("Swiftful Thininking")) {
-//            VStack(alignment:.leading){
-//                Image("logo")
-//                    .resizable()
-//                    .frame(width:100,height: 100)
-//                    .clipShape(RoundedRectangle(cornerRadius: 20))
-//                Text("This App was made by following a @SwiftuiThinking course on Youtube. It uses MVVM Architecture,Combine, and CoreData!")
-//                    .font(.callout)
-//                    .fontWeight(.medium)
-//                    .foregroundColor(Color.theme.accentColor)
-//            }
-//            .padding()
-//            Link("Subscrivbe on Youtube 🥳 ",destination: youtubeURL)
-//        }
-//
-//    }
+
 }
