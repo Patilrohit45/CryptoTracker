@@ -35,7 +35,7 @@ class NetworkingManager {
             "x-cg-demo-api-key": "CG-pTFzR7AD2ujN11bBUsfv7Dai"
         ]
        return URLSession.shared.dataTaskPublisher(for: request)
-           .subscribe(on: DispatchQueue.global(qos: .default))
+           //.subscribe(on: DispatchQueue.global(qos: .default))
            .tryMap({ try handleURLResponse(output: $0,url: url) })
            .receive(on: DispatchQueue.main)
            .eraseToAnyPublisher()
